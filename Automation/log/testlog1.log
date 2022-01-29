@@ -1,0 +1,3 @@
+2022-01-26 20:02:18,031 [main] INFO LogDemo - Chrome Opened
+2022-01-26 20:02:19,488 [main] INFO LogDemo - URL Opened
+2022-01-26 20:02:19,529 [main] INFO LogDemo - Title fetched

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Yahoo">
+ <listeners>
+ <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"></listener>
+ 
+ </listeners>
+ 
+
+  <test name="Login Test Automation">
+      
+      <parameter name="Browser" value="chrome"></parameter>
+      <parameter name="url" value="https://login.yahoo.com"></parameter>
+      <parameter name="emailId" value="test@yahoo.com"></parameter>
+      
+      <classes>
+      <class name="com.parameters.ParameterTest"/>
+     
+      </classes>
+  </test> <!-- Test --> 
+   
+  
+</suite> <!-- Suite -->
