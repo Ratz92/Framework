@@ -12,13 +12,14 @@ import org.testng.annotations.Test;
 public class ParameterTest {
 
 	WebDriver driver;
-	
+	// This is the main method and new commit
 	@Test
 	@Parameters({"Browser","url","emailId"})
 	public void YahoologinTest(String Browser,String url,String emailId) {
 		if(Browser.equals("chrome")) {
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		driver = new ChromeDriver();
+		
 		}
 		else if(Browser.equals("chrome")) {
 			System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
