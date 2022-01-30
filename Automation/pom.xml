@@ -19,6 +19,7 @@
     <groupId>org.apache.xmlbeans</groupId>
     <artifactId>xmlbeans</artifactId>
     <version>2.3.0</version>
+     <scope>compile</scope>
 </dependency>
 
 
@@ -26,16 +27,19 @@
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
     <version>2.6</version>
+     <scope>compile</scope>
 </dependency>
 <dependency>
     <groupId>com.relevantcodes</groupId>
     <artifactId>extentreports</artifactId>
     <version>2.41.2</version>
+     <scope>compile</scope>
 </dependency>
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>3.141.59</version>
+     <scope>compile</scope>
 </dependency>
 
 
