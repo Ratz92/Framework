@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Analyzer.JavaProgram">
+      <class name="crossBrowsers.ParallelTesting">
         <methods>
-          <include name="sentence"/>
+          <include name="Verifytitle"/>
         </methods>
-      </class> <!-- Analyzer.JavaProgram -->
+      </class> <!-- crossBrowsers.ParallelTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -13,15 +13,7 @@ public class DynamicWebTableHandling {
 		driver.get("https://www.nyse.com/ipo-center/filings");
 	
 	//custom xpath
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	}
 }
