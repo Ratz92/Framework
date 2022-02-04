@@ -1,0 +1,60 @@
+********Take Screenshot 
+
+
+File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		
+File dest = new File("Path of the file you want to save and file name");
+
+
+********Logging 
+
+Logger log = Logger.getLogger("LogDemo");
+		
+PropertyConfigurator.configure("log4j.properties");
+
+********Waits 
+
+
+----- Explicitly Wait 
+
+new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.elementToBeClickable(locator));
+
+locator.click();
+
+
+----- Implicitly wait 
+
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+----- Fluent Wait 
+
+Wait wait = new FluentWait(WebDriver reference)
+.withTimeout(timeout, SECONDS)
+.pollingEvery(timeout, SECONDS)
+.ignoring(Exception.class);
+
+WebElement foo=wait.until(new Function<WebDriver, WebElement>() {
+public WebElement applyy(WebDriver driver) {
+return driver.findElement(By.id("foo"));
+}
+});
+
+******** Timeout 
+
+----- Page load timeout 
+
+driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+
+******** Exceptions
+
+NoSuchElementException
+NoSuchWindowException
+NoSuchFrameException
+NoAlertPresentException
+InvalidSelectorException
+ElementNotVisibleException
+ElementNotSelectableException
+TimeoutException
+NoSuchSessionException
+StaleElementReferenceException
+
